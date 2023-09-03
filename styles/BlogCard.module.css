@@ -1,0 +1,19 @@
+.dimensionsSmall {
+    width: 288px;
+    height: 556px;
+};
+
+.dimensionsLarge {
+    width: 764px;
+    height: 424px;
+}
+
+.imageLarge {
+    width: 280px;
+    height: 364px;
+}
+
+.imageSmall {
+    width: 224px;
+    height: 176px;
+}
