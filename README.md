@@ -4,13 +4,13 @@ This is a blogging website created using Next.js and using Firebase's Firestore 
 ## Getting Started
 To get started with Codify, follow these steps:
 
-1. ### Clone the repository
+* ### Clone the repository
 
 ```
 git clone https://github.com/your-username/codify.git
 ```
 
-2. ### Install Dependencies
+* ### Install Dependencies
 After cloning the repository, navigate to the project directory and install the required dependencies:
 
 ```
@@ -18,14 +18,14 @@ cd codify
 npm install
 ```
 
-3. ### Set Up Firebase:
+* ### Set Up Firebase:
 
-* Create a Firebase project on the Firebase Console.
-* Create a web app in your project.
-* Replace the Firebase configuration in the project with your own. You can usually find this configuration in the Firebase settings of your web app.
+1. Create a Firebase project on the Firebase Console.
+2. Create a web app in your project.
+3. Replace the Firebase configuration in the project with your own. You can usually find this configuration in the Firebase settings of your web app.
 <br>
 You can do that by creating `.env.local` file in your projects root directory and adding the below values:
-
+<br>
 ```
 NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
@@ -35,7 +35,7 @@ NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
 NEXT_PUBLIC_FIREBASE_APP_ID=your-app-id
 ```
 
-4. Start the Development Server:
+* Start the Development Server:
 
 Once you have set up Firebase, you can start the development server:
 
