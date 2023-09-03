@@ -45,3 +45,6 @@ npm run dev
 ```
 
 This will launch the Next.js development server and your application will be accessible at http://localhost:3000.
+
+## Preview
+![codify](https://github.com/ayeshag7/codify/assets/106478752/255a093d-6e31-498e-8641-f2150dc2f0e7)
