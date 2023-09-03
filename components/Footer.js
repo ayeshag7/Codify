@@ -33,7 +33,7 @@ const Footer = ({blogs}) => {
                 />
 
                 <p className="text-subtleGrey text-sm w-56 mb-12 md:my-8 leading-7">
-                Whether you're an experienced developer looking to stay updated with the latest trends or a beginner eager to learn the ropes of programming, 
+                Whether you are an experienced developer looking to stay updated with the latest trends or a beginner eager to learn the ropes of programming, 
                 <span className="font-bold"> codify</span> has got you covered.
                 <br />
                 <br />
