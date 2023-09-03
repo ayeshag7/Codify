@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const MiniFooter = () => {
   return (
@@ -39,11 +40,11 @@ const MiniFooter = () => {
 
             {/* concluding text */}
             <div className="flex justify-start items-center gap-x-2 md:gap-x-6 mt-6 mb-4">
-                <a href="" className="text-boldGrey text-sm md:text-base hover:text-popUpPink">Terms & Conditions</a>
+                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-popUpPink">Terms & Conditions</Link>
                 <div className="w-0.5 h-4 bg-gray-400"></div>
-                <a href="" className="text-boldGrey text-sm md:text-base hover:text-popUpPink">Faq</a>
+                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-popUpPink">Faq</Link>
                 <div className="w-0.5 h-4 bg-gray-400"></div>
-                <a href="" className="text-boldGrey text-sm md:text-base hover:text-popUpPink">Privacy Policy</a>
+                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-popUpPink">Privacy Policy</Link>
             </div>
 
         </div>

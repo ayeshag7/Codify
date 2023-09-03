@@ -54,7 +54,7 @@ const CreatorCard = () => {
         <div>
           <p className="text-xs leading-6 text-boldGrey mt-4">Hello!  My name is Ayesha. I design and develop 
           visually appeling, fully responsive and accessible websites for all
-          using <span className="font-bold">React</span> and <span className="font-bold">Next.js</span>. Let's connect and together.</p>
+          using <span className="font-bold">React</span> and <span className="font-bold">Next.js</span>. Let us work together.</p>
         </div>
 
     </div>
