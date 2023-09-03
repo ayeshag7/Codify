@@ -26,6 +26,7 @@ npm install
 <br>
 You can do that by creating `.env.local` file in your projects root directory and adding the below values:
 <br>
+
 ```
 NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
