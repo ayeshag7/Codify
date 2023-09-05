@@ -41,7 +41,7 @@ export async function getStaticPaths() {
 
     return {
         paths,
-        fallback: true
+        fallback: false
     }
 };
 
@@ -51,6 +51,7 @@ export async function getStaticProps(context) {
     const parts = context.params.slug.split("@");
     const docId = parts[0];
     const color = parts[1] || "bc6B";
+    
     const documentReference = doc(db, "blogs", docId);
     const docSnap = await getDoc(documentReference);
 
