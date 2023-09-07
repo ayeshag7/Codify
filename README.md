@@ -48,3 +48,7 @@ This will launch the Next.js development server and your application will be acc
 
 ## Preview
 ![codify](https://github.com/ayeshag7/codify/assets/106478752/255a093d-6e31-498e-8641-f2150dc2f0e7)
+
+
+## Project Demo
+https://codify-iq.netlify.app/
