@@ -16,7 +16,7 @@ export default function Home({ data }) {
   return (
     <main className="min-h-screen">
 
-      <div className="bg-backgroundGreen p-0 md:p-4" style={{
+      <div className="bg-backgroundGreen p-0 md:pt-4" style={{
         "maxWidth": "1980px",
         "margin": "auto",
         "minHeight": "680px"
@@ -40,10 +40,9 @@ export default function Home({ data }) {
 
       </div>
       
-      
-      </div>
-
       <Footer blogs={blogs}/>
+
+      </div>
 
     </main>
   )

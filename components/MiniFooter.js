@@ -4,9 +4,8 @@ import Link from 'next/link';
 
 const MiniFooter = () => {
   return (
-    <div className="bg-backgroundSkin p-0 md:p-4 border border-t-black" style={{
+    <div className="bg-backgroundSkin mt-12 md:m-auto p-0 md:p-4 border border-t-black" style={{
         "maxWidth": "1980px",
-        "margin": "auto",
         "minHeight": "380px"
       }}>
 

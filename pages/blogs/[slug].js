@@ -12,9 +12,8 @@ const Post = ({  data }) => {
 
   return (
       <>
-        <div className="bg-backgroundGreen p-0 md:p-4" style={{
+        <div className="bg-backgroundGreen m-0 md:m-auto p-0 md:pt-4" style={{
         "maxWidth": "1980px",
-        "margin": "auto",
         "minHeight": "680px"
       }}>
 
@@ -22,8 +21,10 @@ const Post = ({  data }) => {
 
         <BlogPage blog={blog} color={color}/>
 
+        <MiniFooter />
+
       </div>
-      <MiniFooter />
+
       </>
   )
 }
