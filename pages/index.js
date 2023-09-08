@@ -70,7 +70,7 @@ async function fetchDataFromFirestore() {
 };
 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await fetchDataFromFirestore();
   return {
     props: {

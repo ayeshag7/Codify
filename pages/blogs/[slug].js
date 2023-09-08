@@ -31,22 +31,7 @@ const Post = ({  data }) => {
 export default Post;
 
 
-export async function getStaticPaths() {
-    const collectionRef = collection(db, "blogs");
-    const querySnapshot = await getDocs(collectionRef);
-
-    const paths = querySnapshot.docs.map((doc) => ({
-        params: { slug: doc.id },
-      }));
-
-    return {
-        paths,
-        fallback: false
-    }
-};
-
-
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
 
     const parts = context.params.slug.split("@");
     const docId = parts[0];
