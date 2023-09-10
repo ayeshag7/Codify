@@ -23,7 +23,6 @@ npm install
 1. Create a Firebase project on the Firebase Console.
 2. Create a web app in your project.
 3. Replace the Firebase configuration in the project with your own. You can usually find this configuration in the Firebase settings of your web app.
-<br>
 You can do that by creating `.env.local` file in your projects root directory and adding the below values:
 
 ```
