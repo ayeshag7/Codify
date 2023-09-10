@@ -25,7 +25,6 @@ npm install
 3. Replace the Firebase configuration in the project with your own. You can usually find this configuration in the Firebase settings of your web app.
 <br>
 You can do that by creating `.env.local` file in your projects root directory and adding the below values:
-<br>
 
 ```
 NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
@@ -45,10 +44,6 @@ npm run dev
 ```
 
 This will launch the Next.js development server and your application will be accessible at http://localhost:3000.
-
-## Preview
-![codify](https://github.com/ayeshag7/codify/assets/106478752/255a093d-6e31-498e-8641-f2150dc2f0e7)
-
 
 ## Project Demo
 https://codify-iq.netlify.app/
