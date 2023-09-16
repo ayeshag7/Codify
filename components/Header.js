@@ -35,7 +35,7 @@ const Header = () => {
                         <Link href="/" className={navElement} aria-current="page">Home</Link>
                     </li>
                     <li>
-                        <Link href="about" className={navElement}>About</Link>
+                        <Link href="/" className={navElement}>About</Link>
                     </li>
                     <li>
                         <Link href="/" className={navElement}>Blogs</Link>

@@ -7,11 +7,11 @@ const BlogCard = ({ blog, color }) => {
   const {title, subtitle, datePosted, duration, imageURL, id} = blog;
 
   return (
-    <div className={`w-72 h-sh lg:w-lw lg:h-lh flex flex-col gap-y-4 items-center p-7 lg:flex-row lg:gap-x-8 lg:p-8 ${color} border border-black rounded-2xl`}>
+    <div className={`w-72 min-h-smH lg:w-lgW lg:h-lgH flex flex-col gap-y-4 items-center p-7 lg:flex-row lg:gap-x-8 lg:p-8 ${color} border border-black rounded-2xl`}>
 
         {/* Image Div */}
       <Link href={`/blogs/${id}@${color}`}>
-        <div className="w-siw h-sih lg:h-lih lg:w-liw bg-white border border-black rounded-xl hover:scale-105 transform transition-transform duration-400 ease-out"
+        <div className="w-smIW h-smIH lg:h-lgIH lg:w-lgIW bg-white border border-black rounded-xl hover:scale-105 transform transition-transform duration-400 ease-out"
         onMouseOver={(e) => {
           e.target.style.boxShadow = '6px 6px 0 #333333'; 
         }}
@@ -31,13 +31,13 @@ const BlogCard = ({ blog, color }) => {
       
       {/* Text Div */}
       <div className="flex flex-col gap-y-3 lg:gap-y-4">
-        
+
         {/* Date and Duration */}
-        <div className="flex gap-x-4 lg:gap-x-8">
+        <div className="flex gap-x-8">
           <p className="text-xs lg:text-sm text-boldGrey">{datePosted}</p>
-          <div className="flex justify-start items-center gap-x-3">
+          <div className="flex justify-start items-center gap-x-2">
             <div className="h-2 w-2 bg-popUpPink rounded-full"></div>
-            <p className="text-xs lg:text-sm text-boldGrey">{duration}</p>
+            <p className="text-xs lg:text-sm text-boldGrey">{duration} min read</p>
           </div>
         </div>
         
@@ -51,16 +51,19 @@ const BlogCard = ({ blog, color }) => {
         {subtitle}
         </p>
 
-        {/* continue reading and image */}
+        {/* Continue Reading and Author Image */}
         <div className="flex justify-between items-center mb-4 lg:mb-0">
-          <button className="w-36 h-8 lg:w-44 lg:h-10 lg:px-2 bg-white rounded-full hover:scale-105 transform transition-transform duration-400 ease-out text-xs lg:text-sm text-boldGrey font-extrabold"
-          onMouseOver={(e) => {
-              e.target.style.boxShadow = 'none'; 
-            }}
-            onMouseOut={(e) => {
-              e.target.style.boxShadow = '3px 3px 0 #333333';
-            }}>
-          Continue Reading</button>
+          <Link href={`/blogs/${id}@${color}`}>
+            <button className="w-36 h-8 lg:w-44 lg:h-10 lg:px-2 bg-white rounded-full hover:scale-105 transform transition-transform duration-400 ease-out text-xs lg:text-sm text-boldGrey font-extrabold"
+            style={{"boxShadow": "3px 3px 0 #333333"}}
+            onMouseOver={(e) => {
+                e.target.style.boxShadow = 'none'; 
+              }}
+              onMouseOut={(e) => {
+                e.target.style.boxShadow = '3px 3px 0 #333333';
+              }}>
+            Continue Reading</button>
+          </Link>
 
           <div className="h-8 w-8 lg:h-12 lg:w-12 bg-white border border-black rounded-full">
             <Image

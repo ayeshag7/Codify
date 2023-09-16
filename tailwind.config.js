@@ -26,15 +26,16 @@ module.exports = {
         "boldGrey": "#333333"
       },
       width: {
-        'lw': '764px',
-        'liw': '280px',
-        'siw': '224px'
+        'lgW': '764px',
+        'lgIW': '280px',
+        'smIW': '224px',
+        'smIWblogPage': '272px'
       },
       height: {
-        'sh': '556px',
-        'lh': '424px',
-        'sih': '176px',
-        'lih': '364px'
+        'smH': '556px',
+        'lgH': '424px',
+        'smIH': '176px',
+        'lgIH': '364px'
       },
       screens: {
         'ml': '1040px'
