@@ -1,10 +1,10 @@
-import db from "../firebase";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import BlogCard from "../components/BlogCard";
 import CreatorCard from "../components/CreatorCard";
 import FollowCard from "../components/FollowCard";
 import FeaturedBlogs from "../components/FeaturedBlogs";
+import db from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
 
 export default function Home({ data }) {
