@@ -9,9 +9,13 @@ const MiniFooter = () => {
         "minHeight": "380px"
       }}>
 
-        <div className="flex flex-col gap-y-8 items-center mt-20 mb-2">
-
-            <p className="text-2xl md:text-4xl text-center font-extrabold text-boldGrey mb-4">Subscribe to our Newsletter</p>
+        <div className="flex flex-col gap-y-8 items-center mt-12 mb-2">
+            
+            <div>
+                <p className="text-xl md:text-2xl text-center font-extrabold text-boldGrey mb-4">Like what you read?</p>
+                <p className="text-xl md:text-4xl text-center font-extrabold text-boldGrey mb-4">Subscribe to our Newsletter</p>
+            </div>
+            
             <div>
                 <form action="" className="relative">
                     <input type="text" className="bg-white text-boldGrey px-6 w-72 h-12 md:w-96 md:h-16 rounded-full focus:ring-boldGrey focus:outline-yellow-400 border border-black" placeholder="Enter email address"/>
@@ -38,7 +42,7 @@ const MiniFooter = () => {
             </p>
 
             {/* concluding text */}
-            <div className="flex justify-start items-center gap-x-2 md:gap-x-6 mt-6 mb-4">
+            <div className="flex justify-start items-center gap-x-2 md:gap-x-6 mt-4 mb-4">
                 <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-popUpPink">Terms & Conditions</Link>
                 <div className="w-0.5 h-4 bg-gray-400"></div>
                 <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-popUpPink">Faq</Link>

@@ -5,6 +5,8 @@ const BlogPage = ({blog, color}) => {
 
   const {title, author, datePosted, duration, content, imageURL} = blog;
 
+  const markup = { __html: content };
+
   return (
     <div className={`flex flex-col items-center px-6 py-16 mx-auto md:my-20 min-h-screen md:max-w-6xl ${color} border border-black md:rounded-xl`}>
 
@@ -49,9 +51,7 @@ const BlogPage = ({blog, color}) => {
         </div>
         
         {/* content */}
-        <p className="text-base text-boldGrey text-left leading-8 md:px-8">
-          {content}
-        </p>
+        <p className="text-base text-boldGrey text-left leading-8 md:px-8" dangerouslySetInnerHTML={markup}></p>
 
     </div>
   )
