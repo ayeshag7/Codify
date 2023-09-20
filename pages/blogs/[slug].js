@@ -1,9 +1,9 @@
-import React from 'react';
-import db from '../../firebase';
-import { collection, getDoc, getDocs, doc } from 'firebase/firestore';
 import BlogPage from '../../components/BlogPage';
 import Header from "../../components/Header";
 import MiniFooter from '../../components/MiniFooter';
+import db from '../../firebase';
+import { getDoc, doc } from 'firebase/firestore';
+
 
 const Post = ({  data }) => {
 
