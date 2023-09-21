@@ -36,7 +36,7 @@ const Footer = ({blogs}) => {
                     </div>
 
 
-                    <h1 className="font-extrabold text-3xl">codify</h1>
+                    <h1 className="font-extrabold text-3xl text-black">codify</h1>
 
                 </div>
 
