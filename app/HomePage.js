@@ -1,16 +1,14 @@
+"use client"
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import BlogCard from "../components/BlogCard";
 import CreatorCard from "../components/CreatorCard";
 import FollowCard from "../components/FollowCard";
 import FeaturedBlogs from "../components/FeaturedBlogs";
-import db from "../firebase";
-import { collection, getDocs } from "firebase/firestore";
 
-export default function Home({ data }) {
 
-  const blogs = data;
-  
+export default function HomePage({ blogs }) {
   return (
     <main className="min-h-screen">
 
@@ -46,32 +44,3 @@ export default function Home({ data }) {
   )
 };
 
-
-async function fetchDataFromFirestore() {
-  const collectionRef = collection(db, "blogs");
-  const querySnapshot = await getDocs(collectionRef);
-
-  let blogs = [];
-
-  querySnapshot.forEach((doc) => {
-    blogs.push({...doc.data(), id: doc.id})
-  });
-
-  blogs.map((doc) => {
-    const timeStamp = doc["datePosted"]
-    doc["datePosted"] = timeStamp.toDate().toLocaleString();
-    return doc
-  })
-
-  return blogs;
-};
-
-
-export async function getServerSideProps() {
-  const data = await fetchDataFromFirestore();
-  return {
-    props: {
-      data,
-    },
-  };
-};
