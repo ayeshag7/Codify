@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const MiniFooter = () => {
   return (
-    <div className="bg-backgroundSkin mt-12 md:m-auto p-0 md:p-4 border border-t-black" style={{
+    <div className="bg-footerGrey mt-12 md:m-auto p-0 md:p-4 border border-t-black" style={{
         "maxWidth": "1980px",
         "minHeight": "380px"
       }}>
@@ -19,7 +19,7 @@ const MiniFooter = () => {
             <div>
                 <form action="" className="relative">
                     <input type="text" className="bg-white text-boldGrey px-6 w-72 h-12 md:w-96 md:h-16 rounded-full focus:ring-boldGrey focus:outline-yellow-400 border border-black" placeholder="Enter email address"/>
-                    <button className="absolute top-2 md:top-3 right-4 bg-popUpPink rounded-full hover:scale-105 transform transition-transform duration-400 ease-out text-sm md:text-base px-2 py-1.5 md:px-4 md:py-2 text-white font-extrabold"
+                    <button className="absolute top-2 md:top-3 right-4 bg-logoPurple rounded-full hover:scale-105 transform transition-transform duration-400 ease-out text-sm md:text-base px-2 py-1.5 md:px-4 md:py-2 text-white font-extrabold"
                     onMouseOver={(e) => {
                         e.target.style.boxShadow = '3px 3px 0 #333333'; 
                     }}
@@ -43,11 +43,11 @@ const MiniFooter = () => {
 
             {/* concluding text */}
             <div className="flex justify-start items-center gap-x-2 md:gap-x-6 mt-4 mb-4">
-                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-popUpPink">Terms & Conditions</Link>
+                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-logoPurple">Terms & Conditions</Link>
                 <div className="w-0.5 h-4 bg-gray-400"></div>
-                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-popUpPink">Faq</Link>
+                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-logoPurple">Faq</Link>
                 <div className="w-0.5 h-4 bg-gray-400"></div>
-                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-popUpPink">Privacy Policy</Link>
+                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-logoPurple">Privacy Policy</Link>
             </div>
 
         </div>

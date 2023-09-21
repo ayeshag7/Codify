@@ -12,15 +12,24 @@ const Header = () => {
     
     <nav className="bg-white mt-0 mb-12 mx-0 md:rounded-full md:mx-16 md:my-12">
 
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between border border-black md:rounded-full mx:0 md:mx-auto py-6 px-6 md:px-10">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between border border-gray-400 shadow-md md:rounded-full mx:0 md:mx-auto py-6 px-6 md:px-10">
 
-            <Image
-            src="/codify-logo.png"
-            alt="codify logo"
-            width={140}
-            height={140}
-            className=""
-            />
+            <div className="flex gap-x-2 items-center">
+
+                <div className="h-12 w-12 p-0 m-0 bg-white rounded-full">
+                    <Image
+                    src="/codify-logo-image.png"
+                    alt="codify logo"
+                    width={1080}
+                    height={1080}
+                    className="w-full h-full object-cover rounded-full"
+                    />
+                </div>
+                
+
+                <h1 className="font-extrabold text-3xl">codify</h1>
+                
+            </div>
 
             <button onClick={() => setHidden(!hidden)} data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:text-gray-700 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
                 <span className="sr-only">Open main menu</span>

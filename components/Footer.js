@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import MiniBlogCard from './MiniBlogCard';
@@ -7,14 +6,13 @@ const Footer = ({blogs}) => {
 
     let latestBlogs = [];
 
-    const colors = ["bg-bc1P", "bg-bc2G", "bg-bc3L"];
 
     for (let i=3; i>0; i--) {
         latestBlogs.push(blogs[i])
     };
 
   return (
-    <div className="bg-backgroundSkin p-0 md:p-4 border border-t-black" style={{
+    <div className="bg-footerGrey p-0 md:p-4 border border-t-gray-600" style={{
         "maxWidth": "1980px",
         "margin": "auto",
         "minHeight": "380px"
@@ -24,13 +22,23 @@ const Footer = ({blogs}) => {
             
             {/* preliminary text */}
             <div className="ml-6 md:m-0">
-                <Image
-                src="/codify-logo.png"
-                alt="codify logo"
-                width={140}
-                height={140}
-                className="mb-4 md:mb-0"
-                />
+
+                <div className="flex gap-x-4 items-center mb-6 md:m-0">
+
+                    <div className="h-12 w-12 p-0 m-0 bg-white rounded-full">
+                        <Image
+                        src="/codify-logo-image.png"
+                        alt="codify logo"
+                        width={1080}
+                        height={1080}
+                        className="w-full h-full object-cover rounded-full"
+                        />
+                    </div>
+
+
+                    <h1 className="font-extrabold text-3xl">codify</h1>
+
+                </div>
 
                 <p className="text-subtleGrey text-sm w-56 mb-12 md:my-8 leading-7">
                 Whether you are an experienced developer looking to stay updated with the latest trends or a beginner eager to learn the ropes of programming, 
@@ -45,20 +53,20 @@ const Footer = ({blogs}) => {
             
             {/* put mini-blog-references */}
             <div className="relative flex flex-col gap-y-6 my-8 ml-6 md:m-0">
-                <div className="max-sm:hidden absolute flex justify-center items-center w-48 h-10 bg-white rounded-3xl border border-black"
-                style={{"top": "-100px"}}>
+                <div className="max-sm:hidden absolute flex justify-center items-center w-48 h-10 bg-white rounded-3xl border border-gray-600"
+                style={{"top": "-100px", "boxShadow": "2px 2px 0 #9505E3"}}>
                     <p className="text-lg font-extrabold text-boldGrey">Latest Articles</p>
                 </div>
                 {latestBlogs.map((blog, index) => {
-                    return <MiniBlogCard key={index} blog={blog} count={index+1} color={colors[index]}/>
+                    return <MiniBlogCard key={index} blog={blog} count={index+1} />
                 })}
             </div>
 
             {/* social media widgets*/}
             <div className="relative flex flex-col gap-y-4 md:gap-y-6 ml-6 my-8 md:m-0">
 
-                <div className="max-sm:hidden absolute flex justify-center items-center w-36 h-10 bg-white rounded-3xl border border-black"
-                style={{"top": "-100px"}}>
+                <div className="max-sm:hidden absolute flex justify-center items-center w-36 h-10 bg-white rounded-3xl border border-gray-600"
+                style={{"top": "-100px", "boxShadow": "2px 2px 0 #9505E3"}}>
                     <p className="text-lg font-extrabold text-boldGrey">Follow us</p>
                 </div>
 
@@ -133,7 +141,7 @@ const Footer = ({blogs}) => {
             <div>
                 <form action="" className="relative">
                     <input type="text" className="bg-white text-boldGrey px-6 w-72 h-12 md:w-96 md:h-16 rounded-full focus:ring-boldGrey focus:outline-yellow-400 border border-black" placeholder="Enter email address"/>
-                    <button className="absolute top-2 md:top-3 right-4 bg-popUpPink rounded-full hover:scale-105 transform transition-transform duration-400 ease-out text-sm md:text-base px-2 py-1.5 md:px-4 md:py-2 text-white font-extrabold"
+                    <button className="absolute top-2 md:top-3 right-4 bg-logoPurple rounded-full hover:scale-105 transform transition-transform duration-400 ease-out text-sm md:text-base px-2 py-1.5 md:px-4 md:py-2 text-white font-extrabold"
                     onMouseOver={(e) => {
                         e.target.style.boxShadow = '3px 3px 0 #333333'; 
                       }}
@@ -157,11 +165,11 @@ const Footer = ({blogs}) => {
 
             {/* concluding text */}
             <div className="flex justify-start items-center gap-x-2 md:gap-x-6 mt-6 mb-4">
-                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-popUpPink">Terms & Conditions</Link>
+                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-logoPurple">Terms & Conditions</Link>
                 <div className="w-0.5 h-4 bg-gray-400"></div>
-                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-popUpPink">Faq</Link>
+                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-logoPurple">Faq</Link>
                 <div className="w-0.5 h-4 bg-gray-400"></div>
-                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-popUpPink">Privacy Policy</Link>
+                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-logoPurple">Privacy Policy</Link>
             </div>
 
         </div>

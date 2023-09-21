@@ -1,11 +1,9 @@
-import React from 'react';
-
 const FollowCard = () => {
   return (
-    <div className="relative h-72 w-72 px-6 pt-12 rounded-xl border border-black bg-backgroundSkin">
+    <div className="relative h-72 w-72 px-6 pt-12 shadow-lg rounded-xl border border-gray-400 bg-white">
 
-      <div className="absolute flex justify-center items-center w-32 h-10 bg-white rounded-3xl border border-black"
-      style={{"top": "-20px"}}>
+      <div className="absolute flex justify-center items-center w-32 h-10 bg-white rounded-3xl border border-gray-400"
+      style={{"top": "-20px", "boxShadow": "2px 2px 0 #9505E3"}}>
         <p className="text-base font-extrabold text-boldGrey">Follow us</p>
       </div>
 

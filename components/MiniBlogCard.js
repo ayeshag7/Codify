@@ -9,7 +9,7 @@ const MiniBlogCard = ({blog, count, color}) => {
   return (
     <div className="flex justify-start gap-x-3 md:gap-x-4">
 
-        <Link href={`/blogs/${id}@${color}`}>
+        <Link href={`/blogs/${id}`}>
           <div id="image-container" className="relative h-16 w-16 md:h-20 md:w-20 bg-white hover:scale-105 transform transition-transform duration-400 ease-out border border-black rounded-xl"
           onMouseOver={(e) => {
             e.target.style.boxShadow = '3px 3px 0 #333333'; 
@@ -32,7 +32,7 @@ const MiniBlogCard = ({blog, count, color}) => {
         </Link>
 
         <div>
-            <Link href={`/blogs/${id}@${color}`}>
+            <Link href={`/blogs/${id}`}>
               <p className="text-sm md:text-base font-bold hover:underline text-boldGrey w-44 md:w-64 mb-2">
                 {title}
               </p>
