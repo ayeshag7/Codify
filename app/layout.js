@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import { ThemeProvider } from "./theme-provider";
 
 export const metadata = {
     title: "Codify",
@@ -9,7 +10,9 @@ const RootLayout = ({children}) => {
     return (
         <html lang="en">
             <body>
-                {children}
+                <ThemeProvider attribute="class">
+                    {children}
+                </ThemeProvider>
             </body>
         </html>
     )
