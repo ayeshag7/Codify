@@ -10,13 +10,11 @@ import { collection, getDocs } from "firebase/firestore";
 export default function Home({ data }) {
 
   const blogs = data;
-
-  const colors = ["bg-bc1P", "bg-bc2G", "bg-bc3L", "bg-bc4V", "bg-bc5M", "bg-bc6B"];
   
   return (
     <main className="min-h-screen">
 
-      <div className="bg-backgroundGreen p-0 md:pt-4" style={{
+      <div className="bg-white p-0 md:pt-4" style={{
         "maxWidth": "1980px",
         "margin": "auto",
         "minHeight": "680px"
@@ -28,7 +26,7 @@ export default function Home({ data }) {
 
         <div className="flex max-md:px-4 md:justify-around flex-wrap gap-x-4 gap-y-8 lg:flex-col lg:gap-y-4">
           {blogs.map((blog, index) => {
-            return <BlogCard key={index} blog={blog} color={colors[index]}/>
+            return <BlogCard key={index} blog={blog} />
           })}
         </div>
 

@@ -1,18 +1,17 @@
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const FeaturedBlogCard = ({blog, count, color}) => {
+const FeaturedBlogCard = ({blog, count}) => {
   
   const {imageURL, title, id} = blog;
 
   return (
     <div className="flex justify-start gap-x-2">
 
-          <Link href={`/blogs/${id}@${color}`}>
+          <Link href={`/blogs/${id}`}>
             <div id="image-container" className="relative w-16 h-16 bg-white hover:scale-105 transform transition-transform duration-400 ease-out border border-black rounded-xl"
             onMouseOver={(e) => {
-              e.target.style.boxShadow = '3px 3px 0 #333333'; 
+              e.target.style.boxShadow = '3px 3px 0 #9505E3'; 
             }}
             onMouseOut={(e) => {
               e.target.style.boxShadow = 'none';
@@ -32,7 +31,7 @@ const FeaturedBlogCard = ({blog, count, color}) => {
           </Link>
 
           <div>
-              <Link href={`/blogs/${id}@${color}`}>
+              <Link href={`/blogs/${id}`}>
                 <p className="text-sm font-bold hover:underline text-boldGrey w-44 mb-1">
                   {title}
                 </p>

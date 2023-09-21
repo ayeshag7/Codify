@@ -1,16 +1,16 @@
 import React from 'react';
 import Image from "next/image";
 
-const BlogPage = ({blog, color}) => {
+const BlogPage = ({blog}) => {
 
   const {title, author, datePosted, duration, content, imageURL} = blog;
 
   const markup = { __html: content };
 
   return (
-    <div className={`flex flex-col items-center px-6 py-16 mx-auto md:my-20 min-h-screen md:max-w-6xl ${color} border border-black md:rounded-xl`}>
+    <div className="flex flex-col items-center px-6 py-16 mx-auto md:mt-0 md:mb-12 min-h-screen md:max-w-6xl bg-white md:rounded-xl">
 
-        <div className="w-72 h-52 md:w-lgW md:h-lgH border border-black rounded-xl mb-12">
+        <div className="w-72 h-52 md:w-lgW md:h-lgH border border-gray-600 rounded-xl mb-12">
           <Image
           src={imageURL}
           alt="blog preview"
@@ -21,7 +21,7 @@ const BlogPage = ({blog, color}) => {
         </div>
 
         {/* title */}
-        <p className="text-4xl md:text-5xl font-bold text-boldGrey text-center">{title}</p>
+        <p className="text-3xl md:text-4xl font-bold text-boldGrey text-center">{title}</p>
 
         {/* author's name, date published, duration */}
         <div className="flex flex-col gap-y-2 md:flex-row items-center gap-x-8 my-8 md:my-4">
