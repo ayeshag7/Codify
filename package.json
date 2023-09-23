@@ -23,6 +23,6 @@
     "tailwindcss": "3.3.3"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.40.1"
+    "@netlify/plugin-nextjs": "^4.36.1"
   }
 }
