@@ -42,7 +42,7 @@ const BlogPageHeader = () => {
                     />
                 </div>
                 {/* Blog Name */}
-                <h1 className="hidden md:block font-bold text-xl">Ayesha's Blog</h1>
+                <h1 className="hidden md:block font-bold text-xl">Ayesha Blog</h1>
             </div>
 
             <button className="px-2 md:px-4" type="button" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
