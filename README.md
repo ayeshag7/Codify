@@ -50,4 +50,4 @@ npm run dev
 This will launch the Next.js development server and your application will be accessible at http://localhost:3000.
 
 ## Project Demo
-The site encountered some issues with deployment on Netlify. Will be deployed soon on another service provider!
+https://codify-two.vercel.app/
