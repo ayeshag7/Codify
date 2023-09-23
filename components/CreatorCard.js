@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const CreatorCard = () => {
   return (
-    <div className="relative h-72 w-72 px-6 pt-12 shadow-lg rounded-xl border border-gray-400 bg-white">
+    <div className="relative h-72 w-72 px-6 pt-12 shadow-lg rounded-xl border dark:border-gray-600 border-gray-400 bg-white dark:bg-darkGrey">
 
         <div className="absolute flex justify-center items-center w-32 h-10 bg-white rounded-3xl border border-gray-400"
         style={{"top": "-20px", "boxShadow": "2px 2px 0 #9505E3"}}>
@@ -24,8 +24,8 @@ const CreatorCard = () => {
 
           <div>
 
-            <p className="text-lg font-extrabold text-boldGrey my-1">Ayesha Gull</p>
-            <p className="text-sm text-boldGrey">Founder & Editor</p>
+            <p className="text-lg font-extrabold text-boldGrey dark:text-offWhite my-1">Ayesha Gull</p>
+            <p className="text-sm text-boldGrey dark:text-white">Founder & Editor</p>
 
             <div className="flex gap-x-4 my-4">
               <a href="" className="text-blue-700">
@@ -51,7 +51,7 @@ const CreatorCard = () => {
         </div>
 
         <div>
-          <p className="text-xs leading-6 text-boldGrey mt-4">Hello!  My name is Ayesha. I design and develop 
+          <p className="text-xs leading-6 text-boldGrey dark:text-offWhite mt-4">Hello!  My name is Ayesha. I design and develop 
           visually appeling, fully responsive and accessible websites for all
           using <span className="font-bold">React</span> and <span className="font-bold">Next.js</span>. Let us work together.</p>
         </div>

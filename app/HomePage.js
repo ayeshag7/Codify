@@ -12,7 +12,7 @@ export default function HomePage({ blogs }) {
   return (
     <main className="min-h-screen">
 
-      <div className="bg-white p-0 md:pt-4" style={{
+      <div className="bg-white dark:bg-darkGrey p-0 md:pt-4" style={{
         "maxWidth": "1980px",
         "margin": "auto",
         "minHeight": "680px"

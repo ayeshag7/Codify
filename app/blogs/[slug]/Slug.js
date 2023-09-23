@@ -8,7 +8,7 @@ const Slug = ({ blog }) => {
 
   return (
       <>
-        <div className="bg-backgroundGreen m-0 p-0" style={{
+        <div className="bg-white dark:bg-darkGrey m-0 p-0" style={{
         "maxWidth": "1980px",
         "minHeight": "680px"
       }}>

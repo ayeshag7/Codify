@@ -20,7 +20,9 @@ module.exports = {
         "subtleGrey": "#353A44",
         "boldGrey": "#333333",
         "logoPurple": "#9505E3",
-        "footerGrey": "#F1F5F9"
+        "footerGrey": "#F1F5F9",
+        "darkGrey": "#020617",
+        "offWhite": "#E2E8F0"
       },
       width: {
         'lgW': '764px',

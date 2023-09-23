@@ -32,7 +32,7 @@ const FeaturedBlogCard = ({blog, count}) => {
 
           <div>
               <Link href={`/blogs/${id}`}>
-                <p className="text-sm font-bold hover:underline text-boldGrey w-44 mb-1">
+                <p className="text-sm font-bold hover:underline text-boldGrey dark:text-offWhite w-44 mb-1">
                   {title}
                 </p>
               </Link>

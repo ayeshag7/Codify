@@ -12,7 +12,7 @@ const Footer = ({blogs}) => {
     };
 
   return (
-    <div className="bg-footerGrey p-0 md:p-4 border border-t-gray-600" style={{
+    <div className="bg-footerGrey dark:bg-black p-0 md:p-4 border-t border-gray-600" style={{
         "maxWidth": "1980px",
         "margin": "auto",
         "minHeight": "380px"
@@ -36,11 +36,11 @@ const Footer = ({blogs}) => {
                     </div>
 
 
-                    <h1 className="font-extrabold text-3xl text-black">codify</h1>
+                    <h1 className="font-extrabold text-3xl text-black dark:text-offWhite">codify</h1>
 
                 </div>
 
-                <p className="text-subtleGrey text-sm w-56 mb-12 md:my-8 leading-7">
+                <p className="text-subtleGrey dark:text-offWhite text-sm w-56 mb-12 md:my-8 leading-7">
                 Whether you are an experienced developer looking to stay updated with the latest trends or a beginner eager to learn the ropes of programming, 
                 <span className="font-bold"> codify</span> has got you covered.
                 <br />
@@ -80,7 +80,7 @@ const Footer = ({blogs}) => {
                     </div>
 
                     <a href="https://web.facebook.com/profile.php?id=100033518282631" rel="noreferrer" target="_blank">
-                        <p className="text-lg font-bold text-boldGrey">Facebook</p>
+                        <p className="text-lg font-bold text-boldGrey dark:text-offWhite">Facebook</p>
                     </a>
                 </div>
                 
@@ -93,7 +93,7 @@ const Footer = ({blogs}) => {
                         </a>
                     </div>
                     <a href="https://twitter.com/ayesha_g7" rel="noreferrer" target="_blank">
-                        <p className="text-lg font-bold text-boldGrey">Twitter</p>
+                        <p className="text-lg font-bold text-boldGrey dark:text-offWhite">Twitter</p>
                     </a>
                 </div>         
 
@@ -107,13 +107,13 @@ const Footer = ({blogs}) => {
                     </div>
 
                     <a href="https://www.instagram.com/" rel="noreferrer" target="_blank">
-                        <p className="text-lg font-bold text-boldGrey">Instagram</p>
+                        <p className="text-lg font-bold text-boldGrey dark:text-offWhite">Instagram</p>
                     </a>
                 </div>
 
                 <div className="flex justify-start items-center gap-x-2">
                     <div className="flex justify-center items-center h-12 w-12 rounded-full bg-white border border-black">
-                        <a href="https://github.com/ayeshag7" rel="noreferrer" target="_blank">
+                        <a href="https://github.com/ayeshag7" rel="noreferrer" target="_blank" className="dark:text-black">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
                                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                             </svg>
@@ -121,7 +121,7 @@ const Footer = ({blogs}) => {
                     </div>
 
                     <a href="https://github.com/ayeshag7" rel="noreferrer" target="_blank">
-                        <p className="text-lg font-bold text-boldGrey">GitHub</p>
+                        <p className="text-lg font-bold text-boldGrey dark:text-offWhite">GitHub</p>
                     </a>
                 </div>
 
@@ -137,10 +137,10 @@ const Footer = ({blogs}) => {
         {/* newsletter subscription */}
         <div className="flex flex-col gap-y-8 items-center mt-20 mb-2">
 
-            <p className="text-2xl md:text-4xl text-center font-extrabold text-boldGrey mb-4">Subscribe to our Newsletter</p>
+            <p className="text-2xl md:text-4xl text-center font-extrabold text-boldGrey dark:text-offWhite mb-4">Subscribe to our Newsletter</p>
             <div>
                 <form action="" className="relative">
-                    <input type="text" className="bg-white text-boldGrey px-6 w-72 h-12 md:w-96 md:h-16 rounded-full focus:ring-boldGrey focus:outline-yellow-400 border border-black" placeholder="Enter email address"/>
+                    <input type="text" className="bg-white text-boldGrey px-6 w-72 h-12 md:w-96 md:h-16 rounded-full focus:ring-boldGrey dark:focus:ring-gray-400 focus:outline-yellow-400 dark:focus:outline-yellow-400 dark:border-gray-400 border-black" placeholder="Enter email address"/>
                     <button className="absolute top-2 md:top-3 right-4 bg-logoPurple rounded-full hover:scale-105 transform transition-transform duration-400 ease-out text-sm md:text-base px-2 py-1.5 md:px-4 md:py-2 text-white font-extrabold"
                     onMouseOver={(e) => {
                         e.target.style.boxShadow = '3px 3px 0 #333333'; 
@@ -158,18 +158,18 @@ const Footer = ({blogs}) => {
                     />
                 </form>
             </div>
-            <p className="text-boldGrey text-sm w-64 md:w-96 text-center leading-7">Subscribe to our email newsletter and unlock access to 
+            <p className="text-boldGrey dark:text-offWhite text-sm w-64 md:w-96 text-center leading-7">Subscribe to our email newsletter and unlock access to 
                 <span className="font-bold"> members-only</span> content and 
                 <span className="font-bold"> exclusive</span> updates.
             </p>
 
             {/* concluding text */}
             <div className="flex justify-start items-center gap-x-2 md:gap-x-6 mt-6 mb-4">
-                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-logoPurple">Terms & Conditions</Link>
+                <Link href="/" className="text-boldGrey dark:text-offWhite text-sm md:text-base dark:hover:text-logoPurple hover:text-logoPurple">Terms & Conditions</Link>
                 <div className="w-0.5 h-4 bg-gray-400"></div>
-                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-logoPurple">Faq</Link>
+                <Link href="/" className="text-boldGrey dark:text-offWhite text-sm md:text-base dark:hover:text-logoPurple hover:text-logoPurple">Faq</Link>
                 <div className="w-0.5 h-4 bg-gray-400"></div>
-                <Link href="/" className="text-boldGrey text-sm md:text-base hover:text-logoPurple">Privacy Policy</Link>
+                <Link href="/" className="text-boldGrey dark:text-offWhite text-sm md:text-base dark:hover:text-logoPurple hover:text-logoPurple">Privacy Policy</Link>
             </div>
 
         </div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -33,7 +32,7 @@ const MiniBlogCard = ({blog, count, color}) => {
 
         <div>
             <Link href={`/blogs/${id}`}>
-              <p className="text-sm md:text-base font-bold hover:underline text-boldGrey w-44 md:w-64 mb-2">
+              <p className="text-sm md:text-base font-bold hover:underline text-boldGrey dark:text-offWhite w-44 md:w-64 mb-2">
                 {title}
               </p>
             </Link>
