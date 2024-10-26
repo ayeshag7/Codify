@@ -29,6 +29,7 @@ npm install
 * Create a Firebase project on the Firebase Console.
 * Create a web app in your project.
 * Replace the Firebase configuration in the project with your own. You can usually find this configuration in the Firebase settings of your web app.
+<br>
 You can do that by creating `.env.local` file in your projects root directory and adding the below values:
 
 ```
@@ -49,5 +50,8 @@ npm run dev
 
 This will launch the Next.js development server and your application will be accessible at http://localhost:3000.
 
-## Project Demo
-https://codify-two.vercel.app/
+## Preview
+![image](https://github.com/user-attachments/assets/87f3feb9-d4cf-41f3-a6a9-e068bc6234fe)
+
+## Website's Link
+Under Modification
